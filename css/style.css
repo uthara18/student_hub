@@ -1,0 +1,155 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+}
+
+
+/* Header */
+h1 {
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px;
+    margin: 0;
+    text-align: center;
+}
+
+/* Navbar */
+nav {
+    background-color: #34495e;
+    padding: 12px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #00ffcc;
+}
+
+/* Content container */
+.container {
+    width: 80%;
+    margin: 30px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+/* Headings */
+h2, h3 {
+    color: #2c3e50;
+}
+
+/* Form */
+form {
+    text-align: center;
+}
+
+input, textarea {
+    width: 60%;
+    padding: 10px;
+    margin: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #2c3e50;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #27ae60;
+}
+
+/* Notes */
+.note {
+    background: #f9f9f9;
+    padding: 10px;
+    margin: 15px 0;
+    border-left: 5px solid #2c3e50;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+/* Grid Layout */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    padding: 40px;
+}
+
+/* Card */
+.card {
+    background: linear-gradient(145deg, #1e293b, #0f172a);
+    border-radius: 15px;
+    padding: 20px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid rgba(255,255,255,0.1);
+    transition: 0.3s;
+}
+
+/* Glow border */
+.card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 15px;
+    padding: 2px;
+    background: linear-gradient(45deg, #00f5ff, #ff00c8);
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+/* Hover */
+.card:hover {
+    transform: translateY(-8px) scale(1.02);
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 18px;
+    border-radius: 20px;
+    background: linear-gradient(45deg, #00f5ff, #ff00c8);
+    color: white;
+    text-decoration: none;
+}
+h2 {
+    text-align: center;
+    margin-top: 30px;
+    color: #ffffff;
+}
+
+.grid {
+    padding: 40px;
+}
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    color: white;
+    border: 1px solid rgba(255,255,255,0.2);
+    transition: 0.3s;
+}
